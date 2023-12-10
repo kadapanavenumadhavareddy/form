@@ -1,0 +1,56 @@
+h6,h5{
+    margin: 0px;
+}
+.button-text{
+    display: none;
+}
+.button-rounded{
+    border-radius: 50%;
+    padding: 5px 7px;
+    border: 1px solid hsl(0, 0%, 100%);
+    margin:auto 15px;
+    color:hsl(0, 0%, 100%);
+    }
+    .active{
+        color:hsl(213, 96%, 18%);
+        background-color: hsl(0, 0%, 100%);
+        }
+        
+    .button {
+        padding-top:15px ;
+        display: flex;
+        flex-direction: row;
+    }
+        @media screen and (max-width:375px){
+            .side-bar{
+                background-image: url('../assests/bg-sidebar-mobile.svg');
+                min-height: 150px;
+                background-repeat: no-repeat;
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        
+        }
+
+@media screen and (min-width:376px){
+    .side-bar{
+        background-image: url('../assests/bg-sidebar-desktop.svg');
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        min-width: 274px;
+    }
+    .button-text{
+        display: block;
+    }
+    h6{
+        color: hsl(231, 11%, 63%);
+        padding-bottom: 5px;
+    }
+    h5
+    {
+       color: hsl(0, 0%, 100%) ;
+    }
+       
+}
